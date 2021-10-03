@@ -405,3 +405,9 @@ i {
       opacity: 0.1;
   }
 }
+
+footer {
+  border: black;
+  width: 99vw;
+  height: 40px;
+}

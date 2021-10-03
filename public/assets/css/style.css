@@ -225,7 +225,7 @@ i {
 }
 
 #resume {
-  height: 100vh;
+  height: 98vh;
   margin-top: 0;
   scroll-snap-align: start;
   padding-top: 60px;
@@ -404,10 +404,4 @@ i {
   100% { 
       opacity: 0.1;
   }
-}
-
-footer {
-  border: black;
-  width: 99vw;
-  height: 40px;
 }

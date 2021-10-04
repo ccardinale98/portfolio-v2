@@ -163,8 +163,7 @@ i {
 }
 
 .img {
-  height: 312px;
-  width: 100%
+  filter: blur(3px);
 }
 
 .card-title {
@@ -179,6 +178,11 @@ i {
   height: 4vh;
   width: 10vh;
   font-size: 1.5vh;
+}
+
+.card-img {
+  height: 100%;
+  overflow: hidden;
 }
 
 @media (max-width:975px) {

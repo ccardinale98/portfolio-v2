@@ -58,3 +58,112 @@ function showCoding() {
     '<div class="experience-desc-text">In July of 2021 I began the Rutgers Coding Bootcamp. It is a 12-week intensive program focused on gaining technical programming skills in HTML5, CSS3, Javascript, JQuery, Bootstrap, Jest, Node.js, MySQL, MERN, Express, Handelbars.js, React, along with others.</div>'
     )
 }
+
+var cards = document.getElementsByClassName('card')
+
+function showAll() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+    }
+}
+
+function showAPI() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+
+        if (!cards[i].classList.contains('api-calls')) {
+            cards[i].hidden = true;
+        }
+    }
+}
+
+function showBootstrap() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+
+        if (!cards[i].classList.contains('bootstrap')) {
+            cards[i].hidden = true;
+        }
+    }
+}
+
+function showJest() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+
+        if (!cards[i].classList.contains('jest')) {
+            cards[i].hidden = true;
+        }
+    }
+}
+
+function showReact() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+
+        if (!cards[i].classList.contains('react')) {
+            cards[i].hidden = true;
+        }
+    }
+}
+
+function showjquery() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+
+        if (!cards[i].classList.contains('jquery')) {
+            cards[i].hidden = true;
+        }
+    }
+}
+
+function showMongo() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+
+        if (!cards[i].classList.contains('mongo')) {
+            cards[i].hidden = true;
+        }
+    }
+}
+
+function showMySql() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+
+        if (!cards[i].classList.contains('mysql')) {
+            cards[i].hidden = true;
+        }
+    }
+}
+
+function showExpress() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+
+        if (!cards[i].classList.contains('express')) {
+            cards[i].hidden = true;
+        }
+    }
+}
+
+function showNode() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+
+        if (!cards[i].classList.contains('node')) {
+            cards[i].hidden = true;
+        }
+    }
+}
+
+$('#node-filter').on('click', showNode);
+$('#express-filter').on('click', showExpress);
+$('#mysql-filter').on('click', showMySql);
+$('#mongo-filter').on('click', showMongo);
+$('#jquery-filter').on('click', showjquery);
+$('#react-filter').on('click', showReact);
+$('#jest-filter').on('click', showJest);
+$('#all-filter').on('click', showAll);
+$('#api-filter').on('click', showAPI);
+$('#bootstrap-filter').on('click', showBootstrap);

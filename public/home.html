@@ -101,6 +101,7 @@
         <i> Jest</i>
         <i> React</i>
         <i> MongoDB</i>
+        <i> Session</i>
       </div>
     </div>
 
@@ -111,9 +112,7 @@
           <p1 id='filter-title'>Filter by technology used</p1>
         </div>
         <div id=filter-buttons>
-          <button class='button' id='html-filter' type='button'>HTML</button>
-          <button class='button' id='css-filter' type='button'>CSS</button>
-          <button class='button' id='js-filter' type='button'>JavaScript</button>
+          <button class='button' id='all-filter' type='button'>Show All</button>
           <button class='button' id='bootstrap-filter' type='button'>Bootstrap</button>
           <button class='button' id='node-filter' type='button'>Node.js</button>
           <button class='button' id='express-filter' type='button'>Express.js</button>
@@ -122,9 +121,10 @@
           <button class='button' id='jquery-filter' type='button'>JQuery</button>
           <button class='button' id='react-filter' type='button'>React</button>
           <button class='button' id='jest-filter' type='button'>Jest</button>
+          <button class='button' id='api-filter' type='button'>API Calls</button>
         </div>
         <div class='row' id='cards-row'>
-          <div class="card mb-3" id='weather-card' style="max-width: 540px;">
+          <div class="card mb-3 api-calls jquery bootstrap" id='weather-card' style="max-width: 540px;">
             <div class="card-img row no-gutters">
               <div class="card-img col-md-4">
                 <img src="https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="clouds" class='img'>
@@ -139,7 +139,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-3" id='gov-card' style="max-width: 540px;">
+          <div class="card mb-3 jquery express mysql session node" id='gov-card' style="max-width: 540px;">
             <div class="card-img row no-gutters">
               <div class="card-img col-md-4">
                 <img src="https://govspend.com/govspend/wp-content/uploads/2020/02/GovContracts.jpg" alt="password on paper" class='img'>
@@ -154,7 +154,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-3" id='day-card' style="max-width: 540px;">
+          <div class="card mb-3 bootstrap jquery" id='day-card' style="max-width: 540px;">
             <div class="card-img row no-gutters">
               <div class="card-img col-md-4">
                 <img src="https://thumbs.dreamstime.com/b/blurred-calendar-page-white-83380207.jpg" alt="standing calendar" class='img'>
@@ -169,7 +169,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-3" id='travel-card' style="max-width: 540px;">
+          <div class="card mb-3 api-calls bootstrap jquery" id='travel-card' style="max-width: 540px;">
             <div class="card-img row no-gutters" id='ta-row'>
               <div class="card-img col-md-4">
                 <img src="https://i.pinimg.com/originals/21/6c/91/216c9153a704eb02cb026dd4c251bd58.jpg" alt="blurred airport" class='img'>

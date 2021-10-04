@@ -157,6 +157,26 @@ function showNode() {
     }
 }
 
+function showServer() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+
+        if (!cards[i].classList.contains('server')) {
+            cards[i].hidden = true;
+        }
+    }
+}
+
+function showInquirer() {
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].hidden = false
+
+        if (!cards[i].classList.contains('inquirer')) {
+            cards[i].hidden = true;
+        }
+    }
+}
+
 $('#node-filter').on('click', showNode);
 $('#express-filter').on('click', showExpress);
 $('#mysql-filter').on('click', showMySql);
@@ -167,3 +187,5 @@ $('#jest-filter').on('click', showJest);
 $('#all-filter').on('click', showAll);
 $('#api-filter').on('click', showAPI);
 $('#bootstrap-filter').on('click', showBootstrap);
+$('#server-filter').on('click', showServer);
+$('#inquirer-filter').on('click', showInquirer);

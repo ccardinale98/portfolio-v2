@@ -432,3 +432,22 @@ i {
   color: white;
   background-color: #343a40;
 }
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+  color: white;
+  background-color: #343a40;
+  padding: 25px;
+}
+
+ul {
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  margin-right: 0px;
+}

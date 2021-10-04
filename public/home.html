@@ -84,7 +84,7 @@
     <div class='container' id='about-me'>
       <h1 id='about-me-h1'>About Me</h1>
       <p1 id='about-me-p1'>Hi, my name is Cameron. I am a computer enthusiast who loves to code and learn new technologies. In July 2021 I enrolled in the Rutgers Coding Bootcamp to learn as much as I can about full-stack development with HTML, CSS, and JavaScript. In the past I have dabbled with python
-        for back-end development. I am proficient in numerous JavaScript frameworks and SQLs.
+        for back-end development. I am proficient in numerous JavaScript frameworks, MVCs, and SQLs.
       </p1>
       <div id='skillset-div'>
         <h1 id='skillset'>Skillset</h1>
@@ -93,8 +93,10 @@
         <i class="fab fa-css3-alt"> CSS3</i>
         <i class="fab fa-bootstrap"> Bootstrap</i>
         <i class="fab fa-node-js"> Node.js</i>
+        <i class="fab fa-github"> Github</i>
 
         <h1 id='skillset'>Frameworks and Other Technologies</h1>
+        <i> Heroku</i>
         <i> Express.js</i>
         <i> MySQL</i>
         <i> jQuery</i>
@@ -102,6 +104,8 @@
         <i> React</i>
         <i> MongoDB</i>
         <i> Session</i>
+        <i> REST API</i>
+        <i> Inquirer</i>
       </div>
     </div>
 
@@ -117,11 +121,13 @@
           <button class='button' id='node-filter' type='button'>Node.js</button>
           <button class='button' id='express-filter' type='button'>Express.js</button>
           <button class='button' id='mysql-filter' type='button'>MySQL</button>
-          <button class='button' id='mongo-filter' type='button'>MongoDB</button>
+          <!-- <button class='button' id='mongo-filter' type='button'>MongoDB</button> -->
           <button class='button' id='jquery-filter' type='button'>JQuery</button>
-          <button class='button' id='react-filter' type='button'>React</button>
-          <button class='button' id='jest-filter' type='button'>Jest</button>
-          <button class='button' id='api-filter' type='button'>API Calls</button>
+          <!-- <button class='button' id='react-filter' type='button'>React</button>
+          <button class='button' id='jest-filter' type='button'>Jest</button> -->
+          <button class='button' id='api-filter' type='button'>REST API</button>
+          <button class='button' id='server-filter' type='button'>Dedicated Server</button>
+          <button class='button' id='inquirer-filter' type='button'>Inquirer</button>
         </div>
         <div class='row' id='cards-row'>
           <div class="card mb-3 api-calls jquery bootstrap" id='weather-card' style="max-width: 540px;">
@@ -139,7 +145,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-3 jquery express mysql session node" id='gov-card' style="max-width: 540px;">
+          <div class="card mb-3 jquery express mysql session node server api-calls" id='gov-card' style="max-width: 540px;">
             <div class="card-img row no-gutters">
               <div class="card-img col-md-4">
                 <img src="https://media.istockphoto.com/photos/project-proposal-with-stack-of-documents-and-keyboard-picture-id1125003529?k=20&m=1125003529&s=612x612&w=0&h=qn1VS3mGitbGnOY2Tfub_-yTmwYWdLz-SuzslDXTVSg=" alt="password on paper" class='img'>
@@ -184,6 +190,34 @@
               </div>
             </div>
           </div>
+          <div class="card mb-3 jquery mysql node express api-calls" id='day-card' style="max-width: 540px;">
+            <div class="card-img row no-gutters">
+              <div class="card-img col-md-4">
+                <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5d95d03767dd830006a295b6%2FGETTY%2F960x0.jpg%3Ffit%3Dscale" alt="standing calendar" class='img'>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">E-Commerce Backend</h5>
+                  <p class="card-text">Allows the creation of a store inventory API through the command-line. The API will store information on products, such as the category they are in, their price, how much stock they have, and their associated store tags.</p>
+                  <a href="https://github.com/ccardinale98/e-commerce-backend" class="btn btn-primary">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 inquirer" id='day-card' style="max-width: 540px;">
+            <div class="card-img row no-gutters">
+              <div class="card-img col-md-4">
+                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--5RslCx5A--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://user-images.githubusercontent.com/9840435/59462324-cca6e500-8e23-11e9-8399-1372492c123b.jpg" alt="standing calendar" class='img'>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Readme Generator</h5>
+                  <p class="card-text">A command-line interface that is used to create discriptive and effective readMEs for projects.</p>
+                  <a href="https://github.com/ccardinale98/readmegen2" class="btn btn-primary">Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -193,7 +227,7 @@
       <div class="container">                      
         <div class="row text-center justify-content-center mb-5">
             <div class="col-xl-6 col-lg-8">
-                <p class="text-muted">This is a timeline of my work experience and schooling since my first job. The year associated with each job/school is the year that I started working there. Click on the circles to see a description of that job/school. Double click to be redirected for more information.</p>
+                <p class="text-muted">This is a timeline of my work experience and schooling since my first job. The year associated with each job/school is the year that I started working there. <strong>Click on the circles to see a description of that job/school. Double click to be redirected for more information.</strong></p>
             </div>
         </div>
         <div class="row">
@@ -241,6 +275,15 @@
       <div id='experience-desc'>
         <!-- populated by js -->
       </div>
+    </div>
+
+    <footer>
+      <ul>
+        <li><a href='mailto:ccardinale98@gmail.com'>ccardinale98@gmail.com</a></li>
+        <li><a href='https://www.linkedin.com/in/ccardinale98/'>linkedin.com/in/ccardinale98</a></li>
+        <li><a href='https://github.com/ccardinale98'>github.com/ccardinale98</a></li>
+      </ul>
+    </footer>
   </div> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

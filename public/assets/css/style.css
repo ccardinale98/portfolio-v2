@@ -451,3 +451,8 @@ ul {
   margin: 0;
   margin-right: 0px;
 }
+
+.footer-link {
+  text-decoration: none;
+  color: #fff;
+}

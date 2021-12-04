@@ -24,6 +24,10 @@ $("#coding-circle").dblclick(function () {
   window.location = "https://bootcamp.rutgers.edu/coding/";
 });
 
+$("#mysuit-circle").dblclick(function () {
+  window.location = "https://mysuit.com/";
+});
+
 function showSalvona() {
   $("#experience-desc").empty();
   $("#experience-desc").append(
@@ -56,6 +60,13 @@ function showCoding() {
   $("#experience-desc").empty();
   $("#experience-desc").append(
     '<div class="experience-desc-text">In July of 2021 I began the Rutgers Coding Bootcamp. It is a 12-week intensive program focused on gaining technical programming skills in HTML5, CSS3, Javascript, JQuery, Bootstrap, Jest, Node.js, MySQL, MERN, Express, Handelbars.js, React, along with others.</div>'
+  );
+}
+
+function showMysuit() {
+  $("#experience-desc").empty();
+  $("#experience-desc").append(
+    '<div class ="experience-desc-text">After the coding bootcamp, I joined the My.Suit team as a Software Developer in New York, NY. My suit is a company that strives to make the best custom tailor-fit suits in the industry. I currently work as their lead backend developer.</div>'
   );
 }
 

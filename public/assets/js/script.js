@@ -3,6 +3,7 @@ $("#rutgers-circle").on("click", showRutgers);
 $("#board-circle").on("click", showBoard);
 $("#lifetime-circle").on("click", showLifetime);
 $("#coding-circle").on("click", showCoding);
+$("#mysuit-circle").on("click", showMysuit);
 
 $("#salvona-circle").dblclick(function () {
   window.location = "https://www.salvona.com/";
@@ -66,7 +67,7 @@ function showCoding() {
 function showMysuit() {
   $("#experience-desc").empty();
   $("#experience-desc").append(
-    '<div class ="experience-desc-text">After the coding bootcamp, I joined the My.Suit team as a Software Developer in New York, NY. My suit is a company that strives to make the best custom tailor-fit suits in the industry. I currently work as their lead backend developer.</div>'
+    '<div class ="experience-desc-text">After the coding bootcamp, I joined the My.Suit team as a Software Developer in New York, NY. My suit is a company that strives to make the best custom tailor-fit suits in the industry. I currently work as their lead full stack developer, working to rework their old classic ASP system into a React/Node driven system.</div>'
   );
 }
 
